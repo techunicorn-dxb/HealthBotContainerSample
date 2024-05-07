@@ -29,14 +29,7 @@ app.listen(port, function() {
 });
 
 function isUserAuthenticated(){
-    const token = localStorage.getItem('authToken') || sessionStorage.getItem('authToken');
-     // Check if the token exists
-    if (token) {
-        // Optionally, you could add logic to validate the token format or expiration here
-        return true;
-    } else {
-        return false;
-    }
+
     return true;
 }
 
